@@ -21,7 +21,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->job(new ForceDeletePosts())->daily();
 
-        $schedule->job(new MakeHttpRequest())->everyMinute();
+        $schedule->job(new MakeHttpRequest())->everySixHours();
     }
 
     /**
